@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ФГБУ ФНЦ ВНИИФК</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url("sports_science_background.jpg");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+    main, header, footer {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+    .carousel-item img {
+      height: 400px;
+      object-fit: cover;
+    }
+    .card-img-top {
+      height: 200px;
+      object-fit: cover;
+    }
+    .card {
+      height: 100%;
+    }
+     .social-icon {
+      width: 24px;
+      height: 24px;
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+  <!--Заголовок-->
+  <header class="bg-dark text-white">
+    <div class="container py-3 d-flex align-items-center justify-content-between">
+      <div class="d-flex align-items-center me-auto">
+          <img src="VNIIFK_logo.png" style="height: 90px; margin-right: 1px;">
+          <h1 class="h5 mb-0">ФГБУ "Федеральный научный центр физической культуры и спорта"</h1>
+      </div>
+      <nav class="ms-4">
+        <ul class="nav">
+          <li class="nav-item"><a href="#" class="nav-link text-white">Главная</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-white">О нас</a></li>
+          <li class="nav-item"><a href="#" class="nav-link text-white">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!-- Основной раздел-->
+  <main class="container my-5">
+    <!--Секция 1--->
+    <section class="mb-5">
+      <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="3.jpeg" class="d-block w-100" alt="Слайд 1">
+          </div>
+          <div class="carousel-item">
+            <img src="1 (2).jpeg" class="d-block w-100" alt="Слайд 2">
+          </div>
+          <div class="carousel-item">
+            <img src="2 (2).jpeg" class="d-block w-100" alt="Слайд 3">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+    <!--Секция 2--->
+    <section class="mb-5">
+      <h2>Новости</h2>
+      <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action">
+          <h5 class="mb-1">Завершился приём работ на конкурс научных статей аспирантов</h5>
+          <p class="mb-1">17 апреля 2025 года завершился приём работ на конкурс научных статей обучающихся аспирантуры ФГБУ ФНЦ ВНИИФК.</p>
+          <small>15 мая 2025</small>
+        </a>
+        <a href="#" class="list-group-item list-group-item-action">
+          <h5 class="mb-1">Публикация методических рекомендаций по ГТО</h5>
+          <p class="mb-1">Разработаны методические рекомендации субъектам Российской Федерации по повышению эффективности вовлечения населения в систематические занятия физической культурой и спортом.</p>
+          <small>10 мая 2025</small>
+        </a>
+      </div>
+    </section>
+    <!--Секция 3--->
+    <section class="mb-5">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="IMG_20250524_135022_425.jpg" class="card-img-top" alt="Картинка 1">
+            <div class="card-body">
+              <h5 class="card-title">Наука</h5>
+              <p class="card-text">ФГБУ ФНЦ ВНИИФК проводит прикладные научные исследования и разработки, направленные на получение новых знаний в области физической культуры и спорта.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="IMG_20250524_135433_107.jpg" class="card-img-top" alt="Картинка 2">
+            <div class="card-body">
+              <h5 class="card-title">Образование</h5>
+              <p class="card-text">Центр реализует образовательные программы, направленные на подготовку специалистов в области физической культуры и спорта.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card h-100">
+            <img src="Периодизация тренировочного процесса.jpg" class="card-img-top" alt="Картинка 3">
+            <div class="card-body">
+              <h5 class="card-title">Публикации</h5>
+              <p class="card-text">ФГБУ ФНЦ ВНИИФК издаёт научные публикации, включая монографии, учебные пособия и методические рекомендации по вопросам физической культуры и спорта.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Секция 4--->
+    <section>
+      <div class="accordion" id="infoAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+              О ФГБУ ВНИИФК
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show">
+            <div class="accordion-body">
+              <p>ФГБУ ФНЦ ВНИИФК – один из старейших научно-исследовательских институтов в области физической культуры и спорта, как в нашей стране, так и в мире.</p>
+              <p> Центр принимает участие в разработке предложений в Единую всероссийскую спортивную классификацию, целевые комплексные программы подготовки сборных команд страны, федеральные программы развития физической культуры и спорта, комплексные программы реабилитации инвалидов и тд.</p>
+              <p> Основные направления деятельности: проведение прикладных научных исследований в области физической культуры и спорта; подготовка научных кадров высшей квалификации.</p>
+              <p>Основные направления прикладных научных исследований:</p>
+                  <ul>
+                    <li>разработка эффективных форм организации и методики занятий физической культурой и спортом с учетом традиций, условий и перспектив развития различных регионов России;</li>
+                    <li>разработка инновационных научно-методических проектов в области спорта высших достижений и подготовки спортивного резерва; формирование интереса населения к занятиям физическими упражнениями и спортом, повышение роли и возможностей физической культуры и спорта в социально-экономическом развитии страны за счет вовлечения в систематические занятия спортом большей части населения;</li>
+                    <li>разработка и внедрение в практику программ развития физической культуры и спорта и комплексных программ реабилитации инвалидов; выявление закономерностей долговременной адаптации и изучение резервных возможностей организма человека в условиях физкультурно-спортивной деятельности; разработка научных основ управления подготовкой спортсменов высших разрядов, спортивных резервов и сборных команд России к Олимпийским играм, чемпионатам мира, крупнейшим международным соревнованиям;</li>
+                    <li>совершенствование средств и методов отбора перспективных спортсменов и прогнозирование развития спорта высших достижений изучение социально-экономических, социологических и организационно-управленческих проблем развития физической культуры и спорта в России; изучение и обобщение достижений мировой науки и практики в сфере физической культуры и спорта и содействие полному их использованию в реальной практике.</li>
+                  </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              Сотрудникам
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              Доступ ограничен.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree">
+              Поступающим в аспирантуру ФГБУ ВНИИФК
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>Прием на обучение по программам подготовки научных и научно-педагогических кадров в аспирантуре в 2024 году будет осуществляться на основании Федерального закона «Об образовании в Российской Федерации» от 29 декабря 2012 года № 273-ФЗ, в соответствии с Порядком приема на обучение по образовательным программам высшего образования – программам подготовки научных и научно-педагогических кадров в аспирантуре, утвержденного Приказом Минобрнауки России 06 августа 2021 г. № 721.
+                К освоению программ подготовки научно-педагогических кадров в аспирантуре допускаются лица, имеющие образование не ниже высшего образования (специалитет или магистратура).
+                Поступление на бюджетной основе по очной форме обучения будет проводиться в соответствии с выделенными контрольными цифрами приема.
+                Контрольные цифры приема в 2025 году:</p>
+              <ul>
+                <li>на бюджетной основе — 3 места, в том числе на места в пределах целевой квоты — 1 места;</li>
+                <li>на договорной основе — 10 мест.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+              Документы
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse">
+            <div class="accordion-body">
+              <p>Основные организационно-правовые документы</p>
+                <ul>
+                  <li>Решение учредителя о создании учреждения</li>
+                  <li>Устав учреждения</li>
+                  <li>Изменения в Устав от 07.08.2024</li>
+                  <li>Свидетельство о государственной регистрации учреждения</li>
+                  <li>Лицензия на осуществление образовательной деятельности</li>
+                  <li>Свидетельство о государственной аккредитации образовательной деятельности</li>
+                  <li>Решения учредителя о назначении руководителя учреждения</li>
+                  <li>Распоряжение Правительства РФ от 19.03.1993 N 449-р "Об образовании Всероссийского научно-исследовательского института физической культуры и спорта КФК России"</li>
+                  <li>Лицензия на образовательную деятельность рег. № 1612 от 20.08.2015 г.</li>
+                  <li>Выписка из реестра лицензий на осуществление образовательной деятельности по состоянию на 29.08.2022 г.</li>
+                </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Футер -->
+  <footer class="bg-dark text-white py-4">
+  <div class="container text-center">
+    <p>Контактная информация: Россия, г. Москва, Елизаветинский пер., д.10 | info@vniifk.ru | стр.1 +7(499) 265-4432</p>
+    <div class="d-flex justify-content-center align-items-center gap-4 mt-3">
+      <a href="https://vk.com/vniifk" target="_blank">
+        <img src="vk logo.png" alt="VK" style="height: 32px;">
+      </a>
+      <a href="https://t.me/vniifk" target="_blank">
+        <img src="telegram logo.png" alt="Telegram" style="height: 32px;">
+      </a>
+      <img src="ms logo.png" alt="Минспорт России" style="height: 32px;">
+      <img src="okr-logo.png" alt="ОКР" style="height: 32px;">
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
