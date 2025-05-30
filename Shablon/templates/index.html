@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин игрушек "Волшебная единорожка"</title>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand active" href="home.html">Магазин игрушек "Волшебная единорожка"</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="home.html">Главная</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">О нас</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="catalog.html">Каталог</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Content -->
+  <main class="py-5">
+    <div class="container">
+      <h1 class="text-center mb-4">Каталог игрушек</h1>
+      <div class="row">
+        <!-- Карточка товара 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename='image/teddy.jpg') }}" alt="Игрушка 1">
+            <div class="card-body">
+              <h5 class="card-title">Плюшевый мишка</h5>
+              <p class="card-text">Мягкий и приятный на ощупь мишка для обнимашек!</p>
+              <p class="card-text"><strong>Цена: 500 руб.</strong></p>
+              <a href="#" class="btn btn-primary">Купить</a>
+            </div>
+          </div>
+        </div>
+        <!-- Карточка товара 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename='image/lego.jpg') }}" alt="Игрушка 2">
+            <div class="card-body">
+              <h5 class="card-title">Конструктор</h5>
+              <p class="card-text">Яркий и увлекательный конструктор для детей.</p>
+              <p class="card-text"><strong>Цена: 1200 руб.</strong></p>
+              <a href="#" class="btn btn-primary">Купить</a>
+            </div>
+          </div>
+        </div>
+        <!-- Карточка товара 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename='image/car.jpg') }}" alt="Игрушка 3">
+            <div class="card-body">
+              <h5 class="card-title">Радиоуправляемая машина</h5>
+              <p class="card-text">Идеальная игрушка для юных гонщиков.</p>
+              <p class="card-text"><strong>Цена: 2500 руб.</strong></p>
+              <a href="#" class="btn btn-primary">Купить</a>
+            </div>
+          </div>
+        </div>
+        <!-- Карточка товара 4 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename='image/doll.jpg') }}" alt="Игрушка 4">
+            <div class="card-body">
+              <h5 class="card-title">Кукла</h5>
+              <p class="card-text">Очаровательная кукла с аксессуарами.</p>
+              <p class="card-text"><strong>Цена: 800 руб.</strong></p>
+              <a href="#" class="btn btn-primary">Купить</a>
+            </div>
+          </div>
+        </div>
+        <!-- Карточка товара 5 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename='image/puzzle.jpg') }}" alt="Игрушка 5">
+            <div class="card-body">
+              <h5 class="card-title">Пазлы</h5>
+              <p class="card-text">Развивающие пазлы для всей семьи.</p>
+              <p class="card-text"><strong>Цена: 600 руб.</strong></p>
+              <a href="#" class="btn btn-primary">Купить</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-light py-4">
+    <div class="container text-center">
+      <p class="mb-0">© 2023 ToyStore. Все права защищены.</p>
+    </div>
+  </footer>
+
+  <!-- Подключение Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

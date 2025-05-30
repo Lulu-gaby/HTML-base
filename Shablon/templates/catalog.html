@@ -1,0 +1,78 @@
+{%extends 'base.html' %}
+
+{% block title %}
+Каталог товаров
+{%endblock%}
+
+{%block content%}
+
+ <!-- Content -->
+  <main class="py-5">
+    <div class="container">
+      <h1 class="text-center mb-4">Каталог игрушек</h1>
+      <div class="row">
+        <!-- Карточка товара 1 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename='image/teddy.jpg') }}" alt="Игрушка 1">
+            <div class="card-body">
+              <h5 class="card-title">Плюшевый мишка</h5>
+              <p class="card-text">Мягкий и приятный на ощупь мишка для обнимашек!</p>
+              <p class="card-text"><strong>Цена: 500 руб.</strong></p>
+              <a href="#" class="btn btn-primary">Купить</a>
+            </div>
+          </div>
+        </div>
+        <!-- Карточка товара 2 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename='image/lego.jpg') }}" alt="Игрушка 2">
+            <div class="card-body">
+              <h5 class="card-title">Конструктор</h5>
+              <p class="card-text">Яркий и увлекательный конструктор для детей.</p>
+              <p class="card-text"><strong>Цена: 1200 руб.</strong></p>
+              <a href="#" class="btn btn-primary">Купить</a>
+            </div>
+          </div>
+        </div>
+        <!-- Карточка товара 3 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename='image/car.jpg') }}" alt="Игрушка 3">
+            <div class="card-body">
+              <h5 class="card-title">Радиоуправляемая машина</h5>
+              <p class="card-text">Идеальная игрушка для юных гонщиков.</p>
+              <p class="card-text"><strong>Цена: 2500 руб.</strong></p>
+              <a href="#" class="btn btn-primary">Купить</a>
+            </div>
+          </div>
+        </div>
+        <!-- Карточка товара 4 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename='image/doll.jpg') }}" alt="Игрушка 4">
+            <div class="card-body">
+              <h5 class="card-title">Кукла</h5>
+              <p class="card-text">Очаровательная кукла с аксессуарами.</p>
+              <p class="card-text"><strong>Цена: 800 руб.</strong></p>
+              <a href="#" class="btn btn-primary">Купить</a>
+            </div>
+          </div>
+        </div>
+        <!-- Карточка товара 5 -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="{{ url_for('static', filename='image/puzzle.jpg') }}" alt="Игрушка 5">
+            <div class="card-body">
+              <h5 class="card-title">Пазлы</h5>
+              <p class="card-text">Развивающие пазлы для всей семьи.</p>
+              <p class="card-text"><strong>Цена: 600 руб.</strong></p>
+              <a href="#" class="btn btn-primary">Купить</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+{%endblock%}

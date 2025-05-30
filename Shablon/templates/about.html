@@ -1,0 +1,68 @@
+{%extends 'base.html' %}
+
+{% block title %}
+О нас
+{% endblock %}
+
+{% block content %}
+<main class="py-5">
+  <div class="container">
+     <p>Добро пожаловать в магазин игрушек <strong>«Волшебная единорожка»</strong>! Мы любим радовать детей качественными и безопасными игрушками, которые развивают воображение и творческие способности.</p>
+
+    <div class="row my-5 align-items-center">
+      <div class="col-md-6">
+        <img src="{{ url_for('static', filename='image/team.jpg') }}" alt="Наша команда" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-md-6">
+        <h2>Наша команда</h2>
+        <p>Мы — команда увлеченных профессионалов, которые знают всё об игрушках и всегда готовы помочь с выбором. Для нас важно, чтобы каждый ребенок получил свой маленький праздник.</p>
+      </div>
+    </div>
+
+    <h2 class="mb-4 text-center">Почему выбирают нас?</h2>
+    <div class="row text-center mb-5">
+      <div class="col-md-4">
+        <div class="p-3 border rounded shadow-sm h-100">
+          <h4>Безопасность</h4>
+          <p>Только сертифицированные и проверенные игрушки, безопасные для детей любого возраста.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-3 border rounded shadow-sm h-100">
+          <h4>Большой выбор</h4>
+          <p>Игрушки на любой вкус — от классики до современных трендов и коллекционных моделей.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="p-3 border rounded shadow-sm h-100">
+          <h4>Удобство</h4>
+          <p>Удобный заказ и быстрая доставка, а также дружелюбный сервис и поддержка.</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="mb-4 text-center">Отзывы наших клиентов</h2>
+    <div class="row">
+      <div class="col-md-4">
+        <blockquote class="blockquote p-3 border rounded">
+          <p>«Отличный магазин, очень довольна выбором и качеством игрушек. Ребенок в восторге!»</p>
+          <footer class="blockquote-footer">Ольга Иванова</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-4">
+        <blockquote class="blockquote p-3 border rounded">
+          <p>«Быстрая доставка и внимательный сервис. Спасибо за помощь с выбором подарка!»</p>
+          <footer class="blockquote-footer">Максим Петров</footer>
+        </blockquote>
+      </div>
+      <div class="col-md-4">
+        <blockquote class="blockquote p-3 border rounded">
+          <p>«Люблю этот магазин за разнообразие и хорошие цены. Рекомендую всем родителям!»</p>
+          <footer class="blockquote-footer">Екатерина Смирнова</footer>
+        </blockquote>
+      </div>
+    </div>
+
+  </div>
+</main>
+{% endblock %}

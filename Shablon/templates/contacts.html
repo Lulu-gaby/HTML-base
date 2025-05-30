@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block title %}Контакты{% endblock %}
+
+{% block content %}
+<main class="py-5">
+  <div class="container">
+    <h1 class="mb-4 text-center">Связаться с нами</h1>
+
+    <div class="row text-center mb-5">
+      <!-- Телефон -->
+      <div class="col-md-4 mb-4">
+        <div class="border rounded p-4 shadow-sm h-100">
+          <h5>📞 Телефон</h5>
+          <p class="mb-0"><a href="tel:+79991234567">+7 (999) 123-45-67</a></p>
+        </div>
+      </div>
+      <!-- Email -->
+      <div class="col-md-4 mb-4">
+        <div class="border rounded p-4 shadow-sm h-100">
+          <h5>📧 Email</h5>
+          <p class="mb-0"><a href="mailto:info@unicorn-shop.ru">info@unicorn-shop.ru</a></p>
+        </div>
+      </div>
+      <!-- Адрес -->
+      <div class="col-md-4 mb-4">
+        <div class="border rounded p-4 shadow-sm h-100">
+          <h5>📍 Адрес</h5>
+          <p class="mb-0">г. Москва, ул. Радужная, д. 12</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Карта -->
+    <div class="mb-5">
+      <h4 class="text-center mb-3">Мы на карте</h4>
+      <div class="ratio ratio-16x9 rounded shadow-sm">
+        <iframe
+          src="https://yandex.ru/map-widget/v1/?um=constructor%3A6a4b9ea8d08e3026781490f90bbff2e02f33c2a2f66b1d64a0b5b86ae7a6cd14&amp;source=constructor"
+          width="100%" height="400" frameborder="0">
+        </iframe>
+      </div>
+    </div>
+
+    <!-- Форма обратной связи -->
+    <div class="mb-5">
+      <h4 class="text-center mb-3">Написать нам</h4>
+      <form class="row g-3">
+        <div class="col-md-6">
+          <label for="name" class="form-label">Ваше имя</label>
+          <input type="text" class="form-control" id="name" placeholder="Имя">
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="example@mail.ru">
+        </div>
+        <div class="col-12">
+          <label for="message" class="form-label">Сообщение</label>
+          <textarea class="form-control" id="message" rows="4" placeholder="Ваше сообщение..."></textarea>
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-primary px-4">Отправить</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>
+{% endblock %}
