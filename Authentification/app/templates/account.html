@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block title %}Аккаунт{% endblock %}
+
+{% block content %}
+<h1>Редактировать профиль</h1>
+
+<h3>Изменить имя пользователя</h3>
+<form method="POST">
+  {{ username_form.hidden_tag() }}
+  {{ username_form.old_username.label }}<br>
+  {{ username_form.old_username(size=30) }}<br>
+  {{ username_form.new_username.label }}<br>
+  {{ username_form.new_username(size=30) }}<br><br>
+  {{ username_form.submit_username() }}
+</form>
+
+
+<h3>Изменить Email</h3>
+<form method="POST">
+  {{ email_form.hidden_tag() }}
+  {{ email_form.old_email.label }}<br>
+  {{ email_form.old_email(size=30) }}<br>
+  {{ email_form.new_email.label }}<br>
+  {{ email_form.new_email(size=30) }}<br><br>
+  {{ email_form.submit_email() }}
+</form>
+
+
+<h3>Изменить пароль</h3>
+<form method="POST">
+  {{ password_form.hidden_tag() }}
+  {{ password_form.old_password.label }}<br>
+  {{ password_form.old_password(size=30) }}<br>
+  {{ password_form.new_password.label }}<br>
+  {{ password_form.new_password(size=30) }}<br>
+  {{ password_form.confirm_password.label }}<br>
+  {{ password_form.confirm_password(size=30) }}<br><br>
+  {{ password_form.submit_password() }}
+</form>
+{% endblock %}
